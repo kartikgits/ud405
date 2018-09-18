@@ -59,8 +59,9 @@ public class CirclesAndArcs extends ApplicationAdapter {
 
         // Circles can be drawn in either Filled or Line mode!
         renderer.begin(ShapeType.Line);
+        renderer.setColor(Color.RED);
         renderer.circle(100, 300, 90);
-
+        renderer.setColor(Color.YELLOW);
         // Let's draw target rings
         for (int radius = 80; radius > 0; radius -= 10) {
             renderer.circle(100, 300, radius);
